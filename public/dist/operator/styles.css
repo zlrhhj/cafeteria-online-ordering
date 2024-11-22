@@ -1,0 +1,130 @@
+html, body {
+  height: 100%;
+  width:100%;
+  margin:0;
+  padding:0;
+}
+button{
+  cursor: pointer;
+}
+#app{
+  width:100%;
+  height:100%;
+  background-color: white;
+}
+.app {
+  width: 100%;
+  height: 100%;
+}
+.title-container {
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+.title-container h1 {
+  font-size: 60px;
+  margin:50px 0;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:rgb(0, 0, 0);
+}
+.divider{
+  width:100%;
+  border: 5px solid rgb(16, 2, 107);
+}
+.orders-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.order {
+  width:90%;
+  border-bottom: 2px solid rgb(33, 19, 33);
+  margin: 20px 0;
+}
+.order-info {
+  display: flex;
+  justify-content: space-around;
+  font-size : 30px;
+}
+
+.order-id {
+  flex :4;
+}
+
+.order-status {
+  display: flex;
+  margin-right: 100px;
+  width:150px;
+  justify-content: space-around;
+}
+.order-status span {
+  align-items: center;
+
+  width: 150px;
+  text-align:center;
+  padding-top: 10px;
+  height:50px;
+  border-radius: 50px;
+
+}
+.order-info button {
+  flex : 1;
+  font-size: 25px;
+  height:60px;
+  width: 100px;
+  color:rgb(16, 2, 107);
+  border: 2px solid rgb(16, 2, 107);;
+}
+.order-items-info {
+  display:flex;
+  flex-direction: column;
+  align-items:  self-start;
+  font-size: 28px;
+  color:rgb(16, 2, 107);
+  margin-bottom: 10px;
+  width: 100%;
+
+}
+
+.item-container {
+  display: flex;
+  width:25%;
+}
+.item-name {
+  flex: 4;
+  margin: 10px 0;
+}
+.item-quantity {
+  flex: 1;
+  margin: 10px 0;
+}
+.received {
+  background-color: rgb(238, 133, 133);
+}
+.preparing {
+  background-color: rgb(8, 148, 228);
+}
+.ready {
+  background-color: rgb(81, 205, 89);
+}
+.delivery {
+  background-color: aqua;
+}
+.completed {
+  background-color: rgb(15, 255, 9);
+}
+
+.completed-orders-container {
+  width: 100%;
+  display: flex;
+  justify-content:  center;
+}
+.alert-modal-overlay {
+  position: fixed;
+  top:100px;
+  left:200px;
+  width:300px;
+  height: 250px;
+  background-color: wheat;
+}
